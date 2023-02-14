@@ -18,7 +18,7 @@ import { Request, Response } from 'express';
 import { CreateUserDTO } from 'src/users/Data Transfer Object/createUserDTO';
 import { AuthGuardGuard } from 'src/users/guard/auth-guard/auth-guard.guard';
 import { ValidateUserPipe } from 'src/users/pipes/validate-user/validate-user.pipe';
-import { UsersService } from 'src/users/services/users/users.service';
+import { UsersService } from 'src/users/users.service';
 
 @Controller('users')
 @UseGuards(AuthGuardGuard)
